@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/mettalic_white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_150sdp"
+                android:background="@drawable/innologin"
+             />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/_100sdp"
+                android:layout_height="wrap_content">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_30sdp"
+                    app:cardCornerRadius="@dimen/_30sdp"
+                    app:cardElevation="@dimen/_20sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="center_horizontal"
+                        android:padding="@dimen/_24sdp">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Login"
+                            android:id="@+id/loginText"
+                            android:textSize="@dimen/_25sdp"
+                            android:textAlignment="center"
+                            android:textStyle="bold"
+                            android:textColor="@color/primary"/>
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:id="@+id/username"
+                            android:drawablePadding="@dimen/_8sdp"
+                            android:hint="Enter staff_id ,mobile,email"
+                            android:padding="@dimen/_8sdp"
+                            android:layout_marginTop="@dimen/_30sdp" />
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:id="@+id/userpassword"
+                            android:inputType="textPassword"
+                            android:drawablePadding="@dimen/_8sdp"
+                            android:hint="password"
+                            android:padding="@dimen/_8sdp"
+                            android:layout_marginTop="@dimen/_10sdp" />
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_50sdp"
+                            android:id="@+id/login"
+                            app:cornerRadius = "@dimen/_20sdp"
+                            android:text="Login"
+                            android:textSize="@dimen/_18sdp"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:backgroundTint="@color/primary" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_130sdp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Don't have account?"
+                android:textSize="@dimen/_13sdp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter"
+                android:textSize="@dimen/_13sdp"
+                android:id="@+id/singText"
+                android:textColor="@color/primary" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
